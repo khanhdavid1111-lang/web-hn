@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <!-- Dòng viewport bên dưới BẮT BUỘC để trang hiển thị đúng trên điện thoại -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trang chủ | Hà Nội Xưa &amp; Nay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== THANH ĐIỀU HƯỚNG ===== -->
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="home.html">Hà Nội Xưa &amp; Nay</a>
+      <button class="menu-toggle" aria-label="Mở menu">&#9776;</button>
+      <nav class="nav-links">
+        <a href="home.html">Trang chủ</a>
+        <a href="du-lich.html">Du lịch</a>
+        <a href="am-thuc.html">Ẩm thực</a>
+        <a href="planner.html">Lịch trình</a>
+        <a href="lien-he.html">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO BANNER + TÌM KIẾM NHANH ===== -->
+  <section class="hero" style="--img:url('images/hero.jpg')">
+    <div class="container">
+      <span class="eyebrow">Hà Nội · Du lịch &amp; Ẩm thực</span>
+      <h1>Khám phá <em>Hà Nội</em></h1>
+      <p>Phố cổ, hồ Tây và những món ăn khó quên đang chờ bạn.</p>
+      <form class="search" action="du-lich.html" method="get">
+        <input type="search" name="q" placeholder="Nhập tên địa điểm hoặc món ăn..." aria-label="Tìm kiếm">
+        <button class="btn" type="submit">Tìm địa điểm</button>
+        <button class="btn btn-ghost" type="submit" formaction="am-thuc.html">Tìm món ăn</button>
+      </form>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"></div>
+  </section>
+
+  <!-- ===== DẢI SỐ LIỆU (sửa data-count theo số thực của nhóm) ===== -->
+  <section class="stats">
+    <div class="container">
+      <div class="stat"><b data-count="6">0</b><span>Địa điểm du lịch</span></div>
+      <div class="stat"><b data-count="6">0</b><span>Món ăn đặc trưng</span></div>
+      <div class="stat"><b data-count="3">0</b><span>Khu vực nổi bật</span></div>
+      <div class="stat"><b data-count="2">0</b><span>Lịch trình mẫu</span></div>
+    </div>
+  </section>
+
+  <!-- ===== TOP ĐỊA ĐIỂM ===== -->
+  <section>
+    <div class="container">
+      <h2>Top địa điểm du lịch hot</h2>
+      <div class="grid">
+      <article class="card">
+        <div class="thumb" style="--img:url('images/hoan-kiem.jpg')"></div>
+        <div class="card-body"><h3>Hồ Hoàn Kiếm</h3><p>Trái tim của thủ đô với tháp Rùa, cầu Thê Húc và không gian đi bộ cuối tuần.</p><div class="actions"><a class="btn" href="du-lich.html">Xem thêm</a></div></div>
+      </article>
+      <article class="card">
+        <div class="thumb" style="--img:url('images/nha-tho-lon.jpg')"></div>
+        <div class="card-body"><h3>Nhà thờ Lớn Hà Nội</h3><p>Công trình kiến trúc Gothic cuối thế kỷ 19, quanh đó là nhiều quán cà phê và quà vặt.</p><div class="actions"><a class="btn" href="du-lich.html">Xem thêm</a></div></div>
+      </article>
+      <article class="card">
+        <div class="thumb" style="--img:url('images/ho-tay.jpg')"></div>
+        <div class="card-body"><h3>Hồ Tây</h3><p>Hồ nước ngọt lớn của nội thành, đẹp nhất lúc hoàng hôn, hợp đạp xe và ngắm cảnh.</p><div class="actions"><a class="btn" href="du-lich.html">Xem thêm</a></div></div>
+      </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TOP MÓN ĂN ===== -->
+  <section class="alt">
+    <div class="container">
+      <h2>Top món ăn tiêu biểu</h2>
+      <div class="grid">
+      <article class="card">
+        <div class="thumb" style="--img:url('images/pho-thin.jpg')"></div>
+        <div class="card-body"><h3>Phở Thìn Bờ Hồ</h3><p>Phở bò tái lăn đặc trưng với hành, gừng xào thơm.</p><div class="actions"><a class="btn" href="am-thuc.html">Xem thêm</a></div></div>
+      </article>
+      <article class="card">
+        <div class="thumb" style="--img:url('images/bun-cha.jpg')"></div>
+        <div class="card-body"><h3>Bún chả Hương Liên</h3><p>Bún chả nướng than thơm, ăn kèm nem cua bể.</p><div class="actions"><a class="btn" href="am-thuc.html">Xem thêm</a></div></div>
+      </article>
+      <article class="card">
+        <div class="thumb" style="--img:url('images/ca-phe-trung.jpg')"></div>
+        <div class="card-body"><h3>Cà phê trứng Giảng</h3><p>Ly cà phê trứng béo ngậy, thức uống gắn liền với Hà Nội.</p><div class="actions"><a class="btn" href="am-thuc.html">Xem thêm</a></div></div>
+      </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LỊCH TRÌNH MẪU ===== -->
+  <section>
+    <div class="container">
+      <h2>Gợi ý lịch trình mẫu</h2>
+      <div class="two">
+        <div class="box"><h3>Food tour 1 ngày ở Phố cổ</h3><p>Từ bát phở sáng đến ly cà phê trứng chiều muộn.</p><a class="btn" href="planner.html">Xem lịch trình</a></div>
+        <div class="box"><h3>Khám phá thủ đô 2 ngày 1 đêm</h3><p>Di tích, Hồ Tây và ẩm thực Hà Nội.</p><a class="btn" href="planner.html">Xem lịch trình</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KÊU GỌI HÀNH ĐỘNG (ảnh nền: images/cta.jpg) ===== -->
+  <section class="cta" style="--img:url('images/cta.jpg')">
+    <div class="container">
+      <h2>Sẵn sàng lên lịch trình?</h2>
+      <p>Lưu những nơi bạn thích và ghép thành chuyến đi của riêng mình.</p>
+      <a class="btn" href="planner.html">Bắt đầu ngay</a>
+    </div>
+  </section>
+
+  <!-- ===== CHÂN TRANG ===== -->
+  <footer class="footer">
+    <div class="container">
+      <span class="brand">Hà Nội Xưa &amp; Nay</span>
+      <p>Bài tập nhóm môn Thiết kế web · [Tên nhóm] · Thông tin giá, giờ mở cửa chỉ mang tính tham khảo.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

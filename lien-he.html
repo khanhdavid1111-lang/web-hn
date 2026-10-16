@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <!-- Dòng viewport bên dưới BẮT BUỘC để trang hiển thị đúng trên điện thoại -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liên hệ & Góp ý | Hà Nội Xưa &amp; Nay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== THANH ĐIỀU HƯỚNG ===== -->
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="home.html">Hà Nội Xưa &amp; Nay</a>
+      <button class="menu-toggle" aria-label="Mở menu">&#9776;</button>
+      <nav class="nav-links">
+        <a href="home.html">Trang chủ</a>
+        <a href="du-lich.html">Du lịch</a>
+        <a href="am-thuc.html">Ẩm thực</a>
+        <a href="planner.html">Lịch trình</a>
+        <a href="lien-he.html">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-head"><div class="container"><h1>Liên hệ &amp; Góp ý</h1><p>Chúng mình rất muốn nghe ý kiến của bạn.</p></div></div>
+  <section>
+    <div class="container two">
+      <div class="box">
+        <h3>Về website</h3>
+        <p>Website giới thiệu du lịch và ẩm thực Hà Nội do nhóm 10 thực hiện trong môn Thiết kế web.</p>
+        <p><b>Email:</b> [email nhóm]<br><b>Điện thoại:</b> [số điện thoại]</p>
+      </div>
+      <div class="box">
+        <h3>Gửi góp ý</h3>
+        <!-- novalidate: tắt kiểm tra mặc định của trình duyệt để dùng JavaScript tự kiểm tra -->
+        <form id="contact-form" novalidate>
+          <div class="field"><label for="name">Họ tên</label><input id="name" type="text"><span class="error" id="name-error"></span></div>
+          <div class="field"><label for="email">Email</label><input id="email" type="email"><span class="error" id="email-error"></span></div>
+          <div class="field"><label for="message">Nội dung</label><textarea id="message" rows="5"></textarea><span class="error" id="message-error"></span></div>
+          <button class="btn" type="submit">Gửi góp ý</button>
+          <div class="success" id="form-success" hidden>Cảm ơn bạn đã góp ý!</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CHÂN TRANG ===== -->
+  <footer class="footer">
+    <div class="container">
+      <span class="brand">Hà Nội Xưa &amp; Nay</span>
+      <p>Bài tập nhóm môn Thiết kế web · [Tên nhóm] · Thông tin giá, giờ mở cửa chỉ mang tính tham khảo.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

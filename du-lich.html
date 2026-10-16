@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <!-- Dòng viewport bên dưới BẮT BUỘC để trang hiển thị đúng trên điện thoại -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Địa điểm du lịch | Hà Nội Xưa &amp; Nay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== THANH ĐIỀU HƯỚNG ===== -->
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="home.html">Hà Nội Xưa &amp; Nay</a>
+      <button class="menu-toggle" aria-label="Mở menu">&#9776;</button>
+      <nav class="nav-links">
+        <a href="home.html">Trang chủ</a>
+        <a href="du-lich.html">Du lịch</a>
+        <a href="am-thuc.html">Ẩm thực</a>
+        <a href="planner.html">Lịch trình</a>
+        <a href="lien-he.html">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-head" style="--img:url('images/banner-du-lich.jpg')"><div class="container"><h1>Địa điểm du lịch</h1><p>Chọn khu vực và loại hình để tìm nơi phù hợp.</p></div></div>
+  <section>
+    <div class="container">
+      <!-- ===== BỘ LỌC ===== -->
+      <div class="filters">
+        <div class="filter-row"><b>Khu vực:</b><button class="chip active" data-group="area" data-value="all">Tất cả</button><button class="chip" data-group="area" data-value="pho-co">Phố cổ</button><button class="chip" data-group="area" data-value="tay-ho">Tây Hồ</button><button class="chip" data-group="area" data-value="ba-dinh">Ba Đình</button></div>
+        <div class="filter-row"><b>Loại hình:</b><button class="chip active" data-group="type" data-value="all">Tất cả</button><button class="chip" data-group="type" data-value="di-tich">Di tích</button><button class="chip" data-group="type" data-value="song-ao">Sống ảo</button></div>
+      </div>
+      <!-- ===== DANH SÁCH CARD ===== -->
+      <div class="grid">
+      <article class="card" data-id="hoan-kiem" data-area="pho-co" data-type="song-ao" data-name="Hồ Hoàn Kiếm" data-kind="Địa điểm" data-address="Phố Đinh Tiên Hoàng, quận Hoàn Kiếm" data-hours="Mở cửa cả ngày" data-pricetext="Miễn phí" data-desc="Trái tim của thủ đô với tháp Rùa, cầu Thê Húc và không gian đi bộ cuối tuần." data-near="Kem Tràng Tiền, Cà phê trứng Giảng">
+        <div class="thumb" style="--img:url('images/hoan-kiem.jpg')"><span class="badge">Phố cổ</span></div>
+        <div class="card-body">
+          <h3>Hồ Hoàn Kiếm</h3>
+          <p class="addr">Phố Đinh Tiên Hoàng, quận Hoàn Kiếm</p>
+          <p>Trái tim của thủ đô với tháp Rùa, cầu Thê Húc và không gian đi bộ cuối tuần.</p>
+          <div class="actions">
+            <button class="btn btn-detail">Xem chi tiết</button>
+            <button class="btn btn-ghost btn-fav">♡ Yêu thích</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" data-id="nha-tho-lon" data-area="pho-co" data-type="di-tich" data-name="Nhà thờ Lớn Hà Nội" data-kind="Địa điểm" data-address="40 Nhà Chung, quận Hoàn Kiếm" data-hours="Tham quan bên ngoài cả ngày; giờ vào trong tùy lễ" data-pricetext="Miễn phí" data-desc="Công trình kiến trúc Gothic cuối thế kỷ 19, quanh đó là nhiều quán cà phê và quà vặt." data-near="Xôi Yến, Cà phê trứng Giảng">
+        <div class="thumb" style="--img:url('images/nha-tho-lon.jpg')"><span class="badge">Phố cổ</span></div>
+        <div class="card-body">
+          <h3>Nhà thờ Lớn Hà Nội</h3>
+          <p class="addr">40 Nhà Chung, quận Hoàn Kiếm</p>
+          <p>Công trình kiến trúc Gothic cuối thế kỷ 19, quanh đó là nhiều quán cà phê và quà vặt.</p>
+          <div class="actions">
+            <button class="btn btn-detail">Xem chi tiết</button>
+            <button class="btn btn-ghost btn-fav">♡ Yêu thích</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" data-id="ho-tay" data-area="tay-ho" data-type="song-ao" data-name="Hồ Tây" data-kind="Địa điểm" data-address="Quận Tây Hồ" data-hours="Mở cửa cả ngày" data-pricetext="Miễn phí" data-desc="Hồ nước ngọt lớn của nội thành, đẹp nhất lúc hoàng hôn, hợp đạp xe và ngắm cảnh." data-near="Bánh tôm Hồ Tây">
+        <div class="thumb" style="--img:url('images/ho-tay.jpg')"><span class="badge">Tây Hồ</span></div>
+        <div class="card-body">
+          <h3>Hồ Tây</h3>
+          <p class="addr">Quận Tây Hồ</p>
+          <p>Hồ nước ngọt lớn của nội thành, đẹp nhất lúc hoàng hôn, hợp đạp xe và ngắm cảnh.</p>
+          <div class="actions">
+            <button class="btn btn-detail">Xem chi tiết</button>
+            <button class="btn btn-ghost btn-fav">♡ Yêu thích</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" data-id="tran-quoc" data-area="tay-ho" data-type="di-tich" data-name="Chùa Trấn Quốc" data-kind="Địa điểm" data-address="Đường Thanh Niên, quận Tây Hồ" data-hours="Ban ngày (nên kiểm tra giờ cụ thể)" data-pricetext="Miễn phí" data-desc="Ngôi chùa cổ nổi tiếng nằm trên một bán đảo nhỏ bên Hồ Tây." data-near="Bánh tôm Hồ Tây">
+        <div class="thumb" style="--img:url('images/tran-quoc.jpg')"><span class="badge">Tây Hồ</span></div>
+        <div class="card-body">
+          <h3>Chùa Trấn Quốc</h3>
+          <p class="addr">Đường Thanh Niên, quận Tây Hồ</p>
+          <p>Ngôi chùa cổ nổi tiếng nằm trên một bán đảo nhỏ bên Hồ Tây.</p>
+          <div class="actions">
+            <button class="btn btn-detail">Xem chi tiết</button>
+            <button class="btn btn-ghost btn-fav">♡ Yêu thích</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" data-id="lang-bac" data-area="ba-dinh" data-type="di-tich" data-name="Lăng Chủ tịch Hồ Chí Minh" data-kind="Địa điểm" data-address="2 Hùng Vương, quận Ba Đình" data-hours="Buổi sáng, nghỉ một số ngày trong tuần (kiểm tra trước)" data-pricetext="Miễn phí" data-desc="Quần thể di tích quan trọng của Hà Nội, cần ăn mặc lịch sự khi tham quan." data-near="Các quán ăn quanh khu Ba Đình">
+        <div class="thumb" style="--img:url('images/lang-bac.jpg')"><span class="badge">Ba Đình</span></div>
+        <div class="card-body">
+          <h3>Lăng Chủ tịch Hồ Chí Minh</h3>
+          <p class="addr">2 Hùng Vương, quận Ba Đình</p>
+          <p>Quần thể di tích quan trọng của Hà Nội, cần ăn mặc lịch sự khi tham quan.</p>
+          <div class="actions">
+            <button class="btn btn-detail">Xem chi tiết</button>
+            <button class="btn btn-ghost btn-fav">♡ Yêu thích</button>
+          </div>
+        </div>
+      </article>
+      <article class="card" data-id="duong-tau" data-area="pho-co" data-type="song-ao" data-name="Phố cà phê đường tàu" data-kind="Địa điểm" data-address="Phùng Hưng, quận Hoàn Kiếm" data-hours="Kiểm tra lịch tàu và quy định tại chỗ" data-pricetext="Miễn phí (chưa gồm đồ uống)" data-desc="Con phố nhỏ có đường ray chạy qua, điểm chụp ảnh nổi tiếng. Luôn chú ý an toàn khi tàu đi qua." data-near="Cà phê trứng Giảng">
+        <div class="thumb" style="--img:url('images/duong-tau.jpg')"><span class="badge">Phố cổ</span></div>
+        <div class="card-body">
+          <h3>Phố cà phê đường tàu</h3>
+          <p class="addr">Phùng Hưng, quận Hoàn Kiếm</p>
+          <p>Con phố nhỏ có đường ray chạy qua, điểm chụp ảnh nổi tiếng. Luôn chú ý an toàn khi tàu đi qua.</p>
+          <div class="actions">
+            <button class="btn btn-detail">Xem chi tiết</button>
+            <button class="btn btn-ghost btn-fav">♡ Yêu thích</button>
+          </div>
+        </div>
+      </article>
+      </div>
+      <p class="empty" id="empty" hidden>Không tìm thấy địa điểm phù hợp.</p>
+    </div>
+  </section>
+
+  <!-- ===== CỬA SỔ CHI TIẾT (hiện khi bấm "Xem chi tiết") ===== -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="m-title">
+      <button class="modal-close" id="m-close" aria-label="Đóng">&times;</button>
+      <h2 id="m-title"></h2>
+      <div class="modal-grid">
+        <div><div class="thumb big" id="m-img"></div><div class="gallery" id="m-gallery"></div></div>
+        <div>
+          <p id="m-desc"></p>
+          <ul class="info" id="m-info"></ul>
+          <p><b>Gợi ý gần đây:</b> <span id="m-near"></span></p>
+          <button class="btn btn-ghost" id="m-fav">♡ Yêu thích</button>
+        </div>
+      </div>
+      <iframe id="m-map" title="Bản đồ Google Maps" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <!-- ===== CHÂN TRANG ===== -->
+  <footer class="footer">
+    <div class="container">
+      <span class="brand">Hà Nội Xưa &amp; Nay</span>
+      <p>Bài tập nhóm môn Thiết kế web · [Tên nhóm] · Thông tin giá, giờ mở cửa chỉ mang tính tham khảo.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

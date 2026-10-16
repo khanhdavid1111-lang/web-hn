@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <!-- Dòng viewport bên dưới BẮT BUỘC để trang hiển thị đúng trên điện thoại -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lịch trình & Yêu thích | Hà Nội Xưa &amp; Nay</title>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== THANH ĐIỀU HƯỚNG ===== -->
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="home.html">Hà Nội Xưa &amp; Nay</a>
+      <button class="menu-toggle" aria-label="Mở menu">&#9776;</button>
+      <nav class="nav-links">
+        <a href="home.html">Trang chủ</a>
+        <a href="du-lich.html">Du lịch</a>
+        <a href="am-thuc.html">Ẩm thực</a>
+        <a href="planner.html">Lịch trình</a>
+        <a href="lien-he.html">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-head"><div class="container"><h1>Lịch trình &amp; Yêu thích</h1><p>Xem lịch trình mẫu hoặc tự ghép lịch trình của riêng bạn.</p></div></div>
+  <section>
+    <div class="container">
+      <div class="tabs">
+        <button class="tab active" data-panel="panel-mau">Lịch trình mẫu</button>
+        <button class="tab" data-panel="panel-yeu-thich">Yêu thích của tôi</button>
+      </div>
+
+      <!-- TAB 1: LỊCH TRÌNH MẪU -->
+      <div class="panel" id="panel-mau">
+        <div class="two">
+          <div class="box">
+            <h3>Food tour 1 ngày ở Phố cổ</h3>
+            <ul class="timeline">
+              <li><b>Sáng:</b> Phở Thìn Bờ Hồ</li>
+              <li><b>Cuối sáng:</b> Dạo Hồ Hoàn Kiếm</li>
+              <li><b>Trưa:</b> Bún chả Hương Liên</li>
+              <li><b>Chiều:</b> Cà phê trứng Giảng, Kem Tràng Tiền</li>
+              <li><b>Tối:</b> Chả cá Thăng Long</li>
+            </ul>
+          </div>
+          <div class="box">
+            <h3>Khám phá thủ đô 2 ngày 1 đêm</h3>
+            <ul class="timeline">
+              <li><b>Ngày 1 sáng:</b> Lăng Chủ tịch Hồ Chí Minh</li>
+              <li><b>Ngày 1 chiều:</b> Chùa Trấn Quốc, Hồ Tây lúc hoàng hôn</li>
+              <li><b>Tối:</b> Chả cá Thăng Long, nghỉ đêm tại phố cổ</li>
+              <li><b>Ngày 2 sáng:</b> Xôi Yến, Nhà thờ Lớn</li>
+              <li><b>Ngày 2 chiều:</b> Phố cà phê đường tàu</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: YÊU THÍCH (nội dung do script.js tạo ra) -->
+      <div class="panel" id="panel-yeu-thich" hidden>
+        <div class="box" style="margin-bottom:24px">
+          <h3>Thêm nhanh</h3>
+          <div class="row">
+            <select id="add-select" aria-label="Chọn địa điểm hoặc quán ăn"><optgroup label="Địa điểm du lịch"><option value="hoan-kiem" data-name="Hồ Hoàn Kiếm" data-kind="Địa điểm" data-address="Phố Đinh Tiên Hoàng, quận Hoàn Kiếm">Hồ Hoàn Kiếm</option><option value="nha-tho-lon" data-name="Nhà thờ Lớn Hà Nội" data-kind="Địa điểm" data-address="40 Nhà Chung, quận Hoàn Kiếm">Nhà thờ Lớn Hà Nội</option><option value="ho-tay" data-name="Hồ Tây" data-kind="Địa điểm" data-address="Quận Tây Hồ">Hồ Tây</option><option value="tran-quoc" data-name="Chùa Trấn Quốc" data-kind="Địa điểm" data-address="Đường Thanh Niên, quận Tây Hồ">Chùa Trấn Quốc</option><option value="lang-bac" data-name="Lăng Chủ tịch Hồ Chí Minh" data-kind="Địa điểm" data-address="2 Hùng Vương, quận Ba Đình">Lăng Chủ tịch Hồ Chí Minh</option><option value="duong-tau" data-name="Phố cà phê đường tàu" data-kind="Địa điểm" data-address="Phùng Hưng, quận Hoàn Kiếm">Phố cà phê đường tàu</option></optgroup><optgroup label="Quán ăn / món ăn"><option value="pho-thin" data-name="Phở Thìn Bờ Hồ" data-kind="Quán ăn" data-address="13 Lò Đúc, quận Hai Bà Trưng">Phở Thìn Bờ Hồ</option><option value="bun-cha" data-name="Bún chả Hương Liên" data-kind="Quán ăn" data-address="24 Lê Văn Hưu, quận Hai Bà Trưng">Bún chả Hương Liên</option><option value="ca-phe-trung" data-name="Cà phê trứng Giảng" data-kind="Quán ăn" data-address="39 Nguyễn Hữu Huân, quận Hoàn Kiếm">Cà phê trứng Giảng</option><option value="xoi-yen" data-name="Xôi Yến" data-kind="Quán ăn" data-address="35B Nguyễn Hữu Huân, quận Hoàn Kiếm">Xôi Yến</option><option value="cha-ca" data-name="Chả cá Thăng Long" data-kind="Quán ăn" data-address="6B Đường Thành, quận Hoàn Kiếm">Chả cá Thăng Long</option><option value="kem-trang-tien" data-name="Kem Tràng Tiền" data-kind="Quán ăn" data-address="35 Tràng Tiền, quận Hoàn Kiếm">Kem Tràng Tiền</option></optgroup></select>
+            <button class="btn btn-ghost" id="add-fav">♡ Yêu thích</button>
+            <button class="btn" id="add-plan">+ Lịch trình</button>
+          </div>
+        </div>
+        <div class="two">
+          <div class="box"><h3>Danh sách yêu thích</h3><ul class="list" id="wishlist"></ul></div>
+          <div class="box"><h3>Lịch trình của tôi</h3><ul class="list" id="plan"></ul></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CHÂN TRANG ===== -->
+  <footer class="footer">
+    <div class="container">
+      <span class="brand">Hà Nội Xưa &amp; Nay</span>
+      <p>Bài tập nhóm môn Thiết kế web · [Tên nhóm] · Thông tin giá, giờ mở cửa chỉ mang tính tham khảo.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
